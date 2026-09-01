@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+html, body, #root {
+  height: 100%;
+  background: #F6F4EC;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: #2A3028;
+  -webkit-font-smoothing: antialiased;
+  /* prevent horizontal overflow at any width */
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+  /* images and other replaced elements never overflow their container */
+  max-width: 100%;
+}
+
+img, video, iframe, svg {
+  max-width: 100%;
+  display: block;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #C8CEBC; border-radius: 99px; }
+
+.blob {
+  border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+}
+
+/* ── touch-target helper — wraps anything that must be ≥44×44 px ── */
+.touch-target {
+  min-height: 44px;
+  min-width:  44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── mobile nav drawer ── */
+.nav-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── prevent table overflow ── */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}

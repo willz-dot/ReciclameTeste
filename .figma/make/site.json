@@ -1,0 +1,10 @@
+{
+  "description": "Facilita a gestão e consulta de coletas de reciclagem para moradores e administradores com interface elegante, sustentável e responsiva.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
